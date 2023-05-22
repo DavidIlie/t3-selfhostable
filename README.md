@@ -12,7 +12,7 @@ I hope I can aim to create not something for other people to use but instead a m
     - where the request can run directly on the server process without making a request (run the function from the defined router)
     - ...into a then tanstack-query call with the response cached
       **OR**
-    - ...into then a var like a traditional async operation in a `"use server";` component
+    - ...into a const like a traditional async operation in a `"use server";` component
   - allows mutations to be send either via a traditional post request for expo or using nextjs server actions to run the function from the defined router
 
 > Even if there is no linking system (making requests) between nextjs and the api, i still want everything to be typesafe and synced between the mobile app and web app, which is what tRPC does. See my concerns [here](https://github.com/DavidIlie/t3-selfhostable/tree/master/packages/api)
