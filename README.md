@@ -15,14 +15,14 @@ I hope I can aim to create not something for other people to use but instead a m
     - ...into then a var like a traditional async operation in a `"use server";` component
   - allows mutations to be send either via a traditional post request for expo or using nextjs server actions to run the function from the defined router
 
-> Even if there is no linking system (making requests) between nextjs and the api, i still want everything to be typesafe and synced between the mobile app and web app, which is what tRPC does. See my concerns [here](https://github.com/davidilie)
+> Even if there is no linking system (making requests) between nextjs and the api, i still want everything to be typesafe and synced between the mobile app and web app, which is what tRPC does. See my concerns [here](https://github.com/DavidIlie/t3-selfhostable/tree/master/packages/api)
 
 - an auth solution which works with both the nextjs app and the expo app
   - easy integration for password and social login
   - save details in prisma and allow for easy adding to the user object and deciding what is returned to the client
   - sign in with support with expo and then auth with the server and get session
 
-> NextAuth.js provides all of this and has support for app router but does not work on expo without a lot of modification which is not something I want to rely on as then I can not update the prject easily. See my concerns with clerk and everything else [here](https://github.com/davidilie)
+> NextAuth.js provides all of this and has support for app router but does not work on expo without a lot of modification which is not something I want to rely on as then I can not update the prject easily. See my concerns with clerk and everything else [here](https://github.com/DavidIlie/t3-selfhostable/tree/master/packages/auth)
 
 - an upload solution which works with both the nextjs app and the expo app
   - makes request to server (for project) with file metadata
@@ -30,7 +30,7 @@ I hope I can aim to create not something for other people to use but instead a m
   - uploads to that presigned upload URL
   - main server checks when uploaded and lets server know which send success response
 
-> I know this is pretty much [uploadthing](https://github.com/pingdotgg/uploadthing) but I have some concerns, see them [here](https://github.com/davidilie)
+> I know this is pretty much [uploadthing](https://github.com/pingdotgg/uploadthing) but I have some concerns, see them [here](https://github.com/DavidIlie/t3-selfhostable/tree/master/packages/uploads)
 
 - Prisma using the jsonProtocol feature which makes it very fast
 
