@@ -17,7 +17,7 @@ jobs:
   build-lint:
     env:
       DATABASE_URL: file:./db.sqlite
-    runs-on: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository && 'ubuntu-latest' || 'davidapps-linux-x64' }}
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repo
